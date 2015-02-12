@@ -1,0 +1,199 @@
+/*
+	Name : Messi-Timeline
+	Create : Le Viet Quang (quang.le@ringierstudios.com)
+	Date : 26 - 8 -2012
+	Version : 1.0
+	Project : FIFA Football App
+*/
+
+@charset "UTF-8";
+/* CSS Document */
+@font-face {
+    font-family: TitlingGothicFBComp-Med;
+    src: url(../fonts/TitlingGothicFBComp-Med.ttf);
+}
+
+@font-face {
+    font-family: TitlingGothicFBCond-Light;
+    src: url(../fonts/TitlingGothicFBCond-Light.otf);
+}
+
+*{
+	position:absolute;
+	padding:0px;
+	margin:0px;
+}
+
+body {
+	-webkit-user-select:none;
+    -webkit-text-size-adjust:none;
+	padding:0px;
+	margin:0px;
+	width:1024px;
+	height:768px;
+	background:url(../img/background.jpg) no-repeat;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+#wrapper{
+	left:0px;
+	top:0px;
+	width:1024px;
+	height:768px;
+	overflow:hidden;
+}
+
+#messiface{
+	top:0px;
+	-webkit-transition:left 500ms;
+	z-index:6;
+}
+
+#open_text{
+	left: 34px;
+	top: 343px;
+	width: 490px;
+	height: 260px;
+	-webkit-transition:opacity 500ms;
+}
+
+#open_text > .head{
+	left:0px;
+	top:0px;
+	font-family:TitlingGothicFBComp-Med;
+	font-size:72px;
+}
+
+#open_text > .content{
+	left: 2px;
+	top: 115px;
+	font-family: TitlingGothicFBCond-Light;
+	font-size: 19px;
+	color:rgba(255,255,255,1);
+	white-space:pre;
+}
+
+#content{
+	left: 0px;
+	/*top: 271px;*/
+	width: 1024px;
+	/*height: 362px;*/
+	-webkit-transition:all 800ms;
+	background-color:rgba(88,109,110,1);
+}
+
+img.open{
+	left: 175px;
+	top: 81px;
+}
+
+#line1{
+	left: 0px;
+	top: 447px;
+	height:1px;
+	background-color:rgba(245,143,32,1);
+	z-index:4;
+	-webkit-transition:width 500ms, top 800ms;
+}
+
+#line2{
+	left: 0px;
+	top: 399px;
+	height:1px;
+	background-color:rgba(245,143,32,1);
+	-webkit-transition:opacity 800ms;
+	z-index:4;
+}
+
+#chart_div{
+	left: 0px;
+	top: 48px;
+	width: 1024px;
+	height: 490px;
+	-webkit-transition:opacity 800ms;
+	z-index:5;/*
+	overflow:hidden;*/
+}
+
+#byline{
+	left: 35px;
+	top: 716px;
+	z-index:7;
+	-webkit-transition:opacity 2s;
+}
+
+#move_chart{
+	left: 0px;
+	top: 0px;
+	width: 1024px;
+	height: 490px;
+	background:url(../img/line-bgn.png) 35px 0px no-repeat;
+	-webkit-transition:all 800ms;
+}
+
+.bur-but{
+	background-image:url(../img/but3.png);
+	width:31px;
+	height:31px;
+	z-index:5;
+	-webkit-transition:all 800ms;
+}
+
+.focus-but{
+	background-image:url(../img/but-focus.png);
+	width:31px;
+	height:31px;
+	z-index:5;
+	-webkit-transition:all 800ms;
+}
+
+.close-chart-but{
+	left: 908px;
+	top: 424px;
+	z-index:7;
+	-webkit-transition:opacity 800ms;
+}
+
+.year{
+	left: 30px;
+	top: 472px;
+	-webkit-transition:opacity 1s, top 800ms;
+}
+
+.timeyear{
+	left: 20px;
+	top: 300px;
+	width: 850px;
+	height: 310px;
+	z-index:6;
+	-webkit-transition:all 400ms;
+}
+
+.shadow{
+	-webkit-box-shadow:0 0 1px 1px #333333;
+	left:16px;
+	top:11px;
+}
+
+.headtext{
+	font-family:TitlingGothicFBComp-Med;
+	font-size:46px;
+	color:rgba(245,143,32,0.7);
+	letter-spacing:3px;
+}
+
+.contentText{
+	font-family: TitlingGothicFBCond-Light;
+	font-size: 19px;
+	color:rgba(255,255,255,0.8);
+	white-space:pre;
+	word-spacing:1px;
+	letter-spacing:1px;
+}
+
+#close-content{
+	left: 915px;
+	top: 608px;
+	z-index:10;
+	-webkit-transition:opacity 500ms;
+}
